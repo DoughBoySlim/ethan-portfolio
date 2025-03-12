@@ -13,3 +13,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
