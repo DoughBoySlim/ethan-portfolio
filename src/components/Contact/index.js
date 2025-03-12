@@ -86,12 +86,12 @@ const Contact = () => {
                 </div>
 
                 <div className='info-map'>
-                    Aruzhan (Aru) Betigenova,
+                    Ethan Gibeau,
                     <br />
                     United States,
                     <br />
                     Mankato, MN <br />
-                    <span>aruzhan.betigenova@mnsu.edu</span>
+                    <span>ejgibeau@gmail.com</span>
 
                 </div>
 
