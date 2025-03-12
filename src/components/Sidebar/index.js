@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
-import LogoA from '../../assets/images/logo-a.png';
+import LogoA from '../../assets/images/CausticDough.png';
 import LogoSubstitles from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -36,13 +36,13 @@ const Sidebar = () => (
 
         <ul>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aruzhan-betigenova-a949501b1/">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ethan-gibeau-aa83a1250/">
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
                 </a>
             </li>
 
             <li>
-                <a target="_blank" rel="noreferrer" href="https://github.com/aruzhanpjo">
+                <a target="_blank" rel="noreferrer" href="https://github.com/DoughBoySlim">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                 </a>
             </li>

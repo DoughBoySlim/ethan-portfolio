@@ -8,7 +8,8 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = ['r', 'u', 'z', 'h', 'a', 'n'];
+    const fnameArray = ['E','t', 'h', 'a', 'n'];
+    const lnameArray = ['','G','i','b','e','a','u']
     const jobArray = ['s', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
 
     useEffect( () => {
@@ -23,25 +24,22 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                <span className={letterClass}>H</span>
-    {/*second letter has a delay of 12 (1.2 seconds)*/}
-                <span className={`${letterClass} _12`}>i,</span>
-                <br /> 
-                <span className={`${letterClass} _13`}>I</span>
-                <span className={`${letterClass} _14`}>'m</span>
-                <img src={LogoTitle} alt="developer" />
                 <AnimatedLetters letterClass={letterClass} 
-                strArray={nameArray} 
+                strArray={fnameArray} 
                 idx={15} />
+                <AnimatedLetters letterClass={letterClass} 
+                strArray={lnameArray} 
+                idx={18} />
                 <br />
                 <AnimatedLetters letterClass={letterClass} 
                 strArray={jobArray} 
                 idx={18} />
 
                 </h1>
-                <h2>Java | Python | Angular | .NET</h2>
+                <h2>Game Development | Front-End Engineer </h2>
+                <h2>C++ | Javascript | Python</h2>
                 
-                <a href="https://drive.google.com/file/d/1_DDV6boPqelJ26-gyz3t7EqWcFsD1eI4/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='flat-button2'>VIEW RESUME</a>
+                <a href="https://docs.google.com/document/d/1ObzNSpFv-xrCeqtwrQBx3L6tdrsW2hHA/edit?usp=sharing&ouid=115402545637950883025&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className='flat-button2'>VIEW RESUME</a>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                 
 
@@ -49,7 +47,7 @@ const Home = () => {
             </div>
         <Logo />
         </div>
-        <Loader type="pacman" />
+        <Loader type="ball-spin-fade-loader" />
         </>
     
     );

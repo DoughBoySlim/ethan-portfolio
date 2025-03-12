@@ -2,12 +2,6 @@
     width: 100%;
     margin-top: 20px;
 
-    form {
-        padding: 0;
-        margin: 0;
-    }
-
-
     ul {
         padding: 0;
         margin: 0;
@@ -98,11 +92,11 @@
 
 .info-map {
     position: absolute;
-    background-color: #caf3e5;
+    background-color: #37513e;
     top: 74px;
     right: 31%;
     z-index: 999999;
-    width: 267px;
+    width: rem;
     padding: 20px;
     color: #373636;
     font-family: 'Helvetica';
@@ -124,6 +118,7 @@
     background: rgba(8, 253, 216, 0.1);
     float: right;
     width: 53%;
+    padding-top: 4rem;
     height: 100%;
 }
 

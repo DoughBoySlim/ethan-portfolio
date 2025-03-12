@@ -39,13 +39,13 @@
     animation-delay: 1s; 
 }
 
-.about-page,
+
 .contact-page {
 
     h1{
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #bc8686;
+        color: black;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -113,7 +113,7 @@
 
     .text-animate-hover{
         &:hover{
-            color: #8a4343;
+            color: forestgreen;
         }
     }
 }

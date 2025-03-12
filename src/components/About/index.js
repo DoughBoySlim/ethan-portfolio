@@ -1,8 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGit, faHtml5, faJsSquare, faNodeJs, faReact} from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 //import 'loaders.css/src/animations/ball-rotate.scss';
 
@@ -42,39 +40,8 @@ const About = () => {
                 </p>
 
             </div>
-
-            <div className='stage-cube-cont'>
-                <div className='cubespinner'>
-
-                    <div className='face1'>
-                        <FontAwesomeIcon icon={faNodeJs} color='#f06529'/>
-                    </div>
-
-                    <div className='face2'>
-                        <FontAwesomeIcon icon={faHtml5} color='#f06529'/>
-                    </div>
-
-                    <div className='face3'>
-                        <FontAwesomeIcon icon={faCss3} color='#28a4d9'/>
-                    </div>
-
-                    <div className='face4'>
-                        <FontAwesomeIcon icon={faReact} color='#5ed4f4'/>
-                    </div>
-
-                    <div className='face5'>
-                        <FontAwesomeIcon icon={faJsSquare} color='#efd81d'/>
-                    </div>
-
-                    <div className='face6'>
-                        <FontAwesomeIcon icon={faGit} color='#ec4d28'/>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-        <Loader type="pacman"/>
+        <Loader type="ball-spin-fade-loader"/>
         </>
     )
 }
