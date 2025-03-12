@@ -3,14 +3,13 @@ import LogoTitle from '../../assets/images/logo-a.png';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import Logo from './Logo';
 import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const fnameArray = ['E','t', 'h', 'a', 'n'];
     const lnameArray = ['','G','i','b','e','a','u']
-    const jobArray = ['s', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
+    const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
     useEffect( () => {
         setTimeout(() => {
@@ -45,7 +44,6 @@ const Home = () => {
 
 
             </div>
-        <Logo />
         </div>
         <Loader type="ball-spin-fade-loader" />
         </>
