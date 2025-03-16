@@ -87,32 +87,287 @@
         display: flex;
         justify-content: center;
         font-size: 25px;
+        color: black
     }
     
-    h3 {
+    .good-thunder-dropdown {
+        background-color: #2A3630; /* Light background color for the dropdown */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        width: 100%; /* Ensure it fills the parent container */
+        max-width: 500px; /* Max width for the dropdown */
+        margin: 5px auto; /* Center it on the page */
+        padding: 10px;
+    }
+    
+    .gt-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
         font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #6DBC73;
         color: #2A3630;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .gt-header:hover {
+        background-color: #c4e6a4
+    }
+    
+    .gt-content {
+        padding: 15px;
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555; 
+        line-height: 1.6; 
+    }
+    
+    .gt-content p {
+        margin: 10px 0; /* Margin between paragraphs */
+    }
+    
+    .gt-content ul {
+        list-style-type: disc; /* Bullet points for list items */
+        padding-left: 20px; /* Indentation for list items */
+    }
+    
+    .gt-content ul li {
+        margin-bottom: 8px; /* Space between list items */
+    }
+    
+    .gt-content p strong {
+        font-weight: bold; /* Bold text for labels */
+    }
+    
+    .gt-header h2 {
+        margin: 0; /* Remove margin for the heading */
+    }
+    
+    .gt-header svg {
+        transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+    }
+    
+    .gt-header svg.rotate {
+        transform: rotate(180deg); /* Rotate the arrow when dropdown is open */
+    }
+    
+
+    // Next Gen Dropdown
+    .next-gen-dropdown {
+        background-color: #2A3630; /* Light background color for the dropdown */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        width: 100%; /* Ensure it fills the parent container */
+        max-width: 500px; /* Max width for the dropdown */
+        margin: 5px auto; /* Center it on the page */
+        padding: 10px;
+    }
+    
+    .ng-header {
         display: flex;
-        justify-content: center;
-        font-weight: 200;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #6DBC73;
+        color: #2A3630;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .ng-header:hover {
+        background-color: #c4e6a4
+    }
+    
+    .ng-content {
+        padding: 15px;
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555; 
+        line-height: 1.6; 
+    }
+    
+    .ng-content p {
+        margin: 10px 0; /* Margin between paragraphs */
+    }
+    
+    .ng-content ul {
+        list-style-type: disc; /* Bullet points for list items */
+        padding-left: 20px; /* Indentation for list items */
+    }
+    
+    .ng-content ul li {
+        margin-bottom: 8px; /* Space between list items */
+    }
+    
+    .ng-content p strong {
+        font-weight: bold; /* Bold text for labels */
+    }
+    
+    .ng-header h2 {
+        margin: 0; /* Remove margin for the heading */
+    }
+    
+    .ng-header svg {
+        transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+    }
+    
+    .ng-header svg.rotate {
+        transform: rotate(180deg); /* Rotate the arrow when dropdown is open */
     }
 
-    .main-good {
+    // Patrol Cam
+    .patrol-cam-dropdown {
+        background-color: #2A3630; /* Light background color for the dropdown */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        width: 100%; /* Ensure it fills the parent container */
+        max-width: 500px; /* Max width for the dropdown */
+        margin: 5px auto; /* Center it on the page */
+        padding: 10px;
+    }
+    
+    .pc-header {
         display: flex;
-        margin-bottom: -10rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #6DBC73;
+        color: #2A3630;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .pc-header:hover {
+        background-color: #c4e6a4
+    }
+    
+    .pc-content {
+        padding: 15px;
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555; 
+        line-height: 1.6; 
+    }
+    
+    .pc-content p {
+        margin: 10px 0; /* Margin between paragraphs */
+    }
+    
+    .pc-content ul {
+        list-style-type: disc; /* Bullet points for list items */
+        padding-left: 20px; /* Indentation for list items */
+    }
+    
+    .pc-content ul li {
+        margin-bottom: 8px; /* Space between list items */
+    }
+    
+    .pc-content p strong {
+        font-weight: bold; /* Bold text for labels */
+    }
+    
+    .pc-header h2 {
+        margin: 0; /* Remove margin for the heading */
+    }
+    
+    .pc-header svg {
+        transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+    }
+    
+    .pc-header svg.rotate {
+        transform: rotate(180deg); /* Rotate the arrow when dropdown is open */
     }
 
-    .good-pic-area img{
-        
-        margin-left: 1rem;
-        width: 130%;
-        
+    // Talent Track
+    .talent-track-dropdown {
+        background-color: #2A3630; /* Light background color for the dropdown */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        width: 100%; /* Ensure it fills the parent container */
+        max-width: 500px; /* Max width for the dropdown */
+        margin: 5px auto; /* Center it on the page */
+        padding: 10px;
+    }
+    
+    .tt-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #6DBC73;
+        color: #2A3630;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .tt-header:hover {
+        background-color: #c4e6a4
+    }
+    
+    .tt-content {
+        padding: 15px;
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555; 
+        line-height: 1.6; 
+    }
+    
+    .tt-content p {
+        margin: 10px 0; /* Margin between paragraphs */
+    }
+    
+    .tt-content ul {
+        list-style-type: disc; /* Bullet points for list items */
+        padding-left: 20px; /* Indentation for list items */
+    }
+    
+    .tt-content ul li {
+        margin-bottom: 8px; /* Space between list items */
+    }
+    
+    .tt-content p strong {
+        font-weight: bold; /* Bold text for labels */
+    }
+    
+    .tt-header h2 {
+        margin: 0; /* Remove margin for the heading */
+    }
+    
+    .tt-header svg {
+        transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+    }
+    
+    .tt-header svg.rotate {
+        transform: rotate(180deg); /* Rotate the arrow when dropdown is open */
     }
 
-    .good-text-area p {
-        margin-left: 12rem;
-        margin-right: 1rem;
+
+    .personal-projects {
+        margin-top: -3rem;
     }
-
-
 }
