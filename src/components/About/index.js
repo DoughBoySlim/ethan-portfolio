@@ -8,13 +8,26 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const About = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [isOpen, setIsOpen] = useState(false);
+    
+    const [openDropdowns, setOpenDropdowns] = useState({
+        goodThunder: false,
+        nextGen: false,
+        patrolCam: false,
+        talentTrack: false
+    })
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
+
+    const toggleDropdown = (key) => {
+        setOpenDropdowns(prevState => ({
+            ...prevState,
+            [key]: !prevState[key]
+        }));
+    };
 
     return (
         <>
@@ -32,7 +45,7 @@ const About = () => {
                 </p>
 
                 <p>
-                I have experience woring on client-based projects through my program at Minnesota State University, projects are listed below. 
+                I have experience working on client-based projects through my program at Minnesota State University, projects are listed below. 
                 </p>
 
                 <p>
@@ -51,11 +64,11 @@ const About = () => {
                     </h1>
                     <div className="list-s-projects">
                         <div className="good-thunder-dropdown">
-                            <div className="gt-header" onClick={() => setIsOpen(!isOpen)}>
+                            <div className="gt-header" onClick={() => toggleDropdown('goodThunder')}>
                                 <h2>Good Thunder Press</h2>
-                                {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                                {openDropdowns.goodThunder ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
-                            {isOpen && (
+                            {openDropdowns.goodThunder && (
                                 <div className="gt-content">
                                     <p><strong>Role:</strong> Software Development Lead</p>
                                     <p><strong>Team Size:</strong> 3 Developers</p>
@@ -76,11 +89,11 @@ const About = () => {
                             )}
                         </div>
                         <div className="next-gen-dropdown">
-                            <div className="ng-header" onClick={() => setIsOpen(!isOpen)}>
+                            <div className="ng-header" onClick={() => toggleDropdown('nextGen')}>
                                 <h2>Next Gen RF Design</h2>
-                                {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                                {openDropdowns.nextGen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
-                            {isOpen && (
+                            {openDropdowns.nextGen && (
                                 <div className="ng-content">
                                     <p><strong>Role:</strong> Testing Lead</p>
                                     <p><strong>Team Size:</strong> 4 Developers</p>
@@ -102,11 +115,11 @@ const About = () => {
                             )}
                         </div>
                         <div className="patrol-cam-dropdown">
-                            <div className="pc-header" onClick={() => setIsOpen(!isOpen)}>
+                            <div className="pc-header" onClick={() => toggleDropdown('patrolCam')}>
                                 <h2>Patrol Cam</h2>
-                                {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                                {openDropdowns.patrolCam ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
-                            {isOpen && (
+                            {openDropdowns.patrolCam && (
                                 <div className="pc-content">
                                     <p><strong>Role:</strong> Team Lead</p>
                                     <p><strong>Team Size:</strong> 4 Developers</p>
@@ -127,11 +140,11 @@ const About = () => {
                             )}
                         </div>
                         <div className="talent-track-dropdown">
-                            <div className="tt-header" onClick={() => setIsOpen(!isOpen)}>
+                            <div className="tt-header" onClick={() => toggleDropdown('talentTrack')}>
                                 <h2>Talent Track (In Progress) </h2>
-                                {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                                {openDropdowns.talentTrack ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                             </div>
-                            {isOpen && (
+                            {openDropdowns.talentTrack && (
                                 <div className="tt-content">
                                     <p><strong>Role:</strong> AI Integration / Testing Lead </p>
                                     <p><strong>Team Size:</strong> 4 Developers</p>
