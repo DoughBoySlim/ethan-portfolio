@@ -21,9 +21,9 @@ const Contact = () => {
         emailjs
             .sendForm(
                 'gmail',
-                'TEMPID',
+                'template_otyl9nn',
                 refForm.current,
-                'userToken'
+                'BF_uuFB4q0RMC5uQY'  
             )
             .then(
                 () => {
@@ -86,9 +86,9 @@ const Contact = () => {
                 </div>
 
                 <div className='info-map'>
-                    Ethan Gibeau,
+                    Ethan Gibeau
                     <br />
-                    United States,
+                    United States
                     <br />
                     Mankato, MN <br />
                     <span>ejgibeau@gmail.com</span>
