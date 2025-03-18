@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/gamedev.png';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
